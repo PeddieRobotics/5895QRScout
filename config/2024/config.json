@@ -8,7 +8,7 @@
       "preserveDataOnReset": true,
       "fields": [
         {
-          "title": "Scouter Initials",
+          "title": "Scouter Name",
           "type": "text",
           "required": true,
           "code": "scouter"
@@ -60,16 +60,15 @@
       "name": "Autonomous",
       "fields": [
         {
-          "code": "auamp",
-          "title": "Amp Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
+          "code": "aum",
+          "title": "Mobility?",
+          "type": "boolean",
+          "defaultValue": false,
           "required": false
         },
         {
-          "code": "auampm",
-          "title": "Amp Missed",
+          "code": "auamp",
+          "title": "Amp Scored",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -85,7 +84,7 @@
         },
         {
           "code": "auln",
-          "title": "Loaded More Notes?",
+          "title": "Cycles Attemped",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -177,7 +176,7 @@
           "code": "cn",
           "title": "Note in Trap?",
           "type": "boolean",
-          "defaultValue": 0,
+          "defaultValue": false,
           "required": false
         },
         {
@@ -194,16 +193,11 @@
           "defaultValue": "Not Completed"
         },
         {
-          "title": "High Note",
-          "type": "select",
+          "title": "Spotlit",
+          "type": "boolean",
           "required": true,
           "code": "harm",
-          "choices": {
-            "Noo": "None",
-            "hupl": "Human Player",
-            "ro": "Robot"
-          },
-          "defaultValue": "None"
+          "defaultValue": false
         }
       ]
     },
