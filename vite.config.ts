@@ -3,6 +3,6 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/QRScout/',
+  base: '/5895QRScout/',
   plugins: [preact()],
 });
